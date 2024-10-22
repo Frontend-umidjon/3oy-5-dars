@@ -1,13 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <h2 class="text-red-800 text-center">TAILWIND CSS
-    </h2>
+    <!-- NAVBAR -->
+    <header class="absolute w-full overflow-hidden">
+        <div class="max-w-[1185px] mx-auto px-[16px] w-full">
+            <nav class=" flex items-center justify-end gap-10 py-[45px] max-md:float-none max-md:justify-between">
+                <button class="font-manrope font-thin text-[32px] leading-[20px]  hidden max-md:block"><i
+                        class="fa-solid fa-bars"></i></button>
+                <ul class="flex gap-10 items-end max-md:hidden">
+                    <li><a class="font-manrope font-bold text-[14px] leading-[20px]" href="#">Çözüm ve Hizmetler</a>
+                    </li>
+                    <li><a class="font-manrope font-bold text-[14px] leading-[20px]" href="#">Ürünler</a></li>
+                    <li><a class="font-manrope font-bold text-[14px] leading-[20px]" href="#">Teknolojiler</a></li>
+                    <li><a class="font-manrope font-bold text-[14px] leading-[20px]" href="#">İnsan Kaynakları</a></li>
+                    <li><a class="font-manrope font-bold text-[14px] leading-[20px]" href="#">Kurumsal</a></li>
+                </ul>
+                <button
+                    class="font-manrope font-bold text-[14px] leading-[20px] text-white px-5 py-4 bg-[#F84646] rounded-[5px]">İletişim</button>
+            </nav>
+        </div>
+    </header>
+    <!-- HERO -->
+    <section
+        class="bg-[url('/assets/hero.png')] bg-cover bg-top bg-no-repeat h-[800px] max-sm:bg-right-center overflow-hidden">
+        <div
+            class="max-w-[1185px] mx-auto px-[16px] w-full flex flex-col justify-center h-full max-lg:px-[84px] max-sm:px-[20px] ">
+            <div class="flex flex-col gap=[20px] ">
+                <h1
+                    class="font-manrope font-[800] text-[64px] leading-[82px] max-w-[665px] max-[830px]:text-[42px] max-[830px]:leading-[57.5px] max-[830px]:text-center text-wrap-balanced">
+                    Bilgi Teknolojilerinde
+                    23 Yıllık Tecrübe</h1>
+                <p
+                    class="font-manrope font-[400] text-[20px] leading-[36px] max-w-[650px] max-[830px]:text-[12px] max-[830px]:leading-[23px] max-[830px]:text-center">
+                    Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe kazanmış
+                    uzman kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız. </p>
+            </div>
+            <div
+                class="mt-[50px] w-[502px] relative max-sm:w-[402px] max-sm:mx-auto flex items-center max-[420px]:w-[320px]">
+                <input type="text" placeholder="Mail bültenimize kayıt ol "
+                    class="py-[19px] pl-[32px] w-[502px] rounded-[8px] max-sm:w-[402px] max-sm:py-[16px] max-[420px]:w-[320px] max-[420px]:pl-[12px]">
+                <button
+                    class="font-manrope font-bold text-[14px] leading-[20px] text-white px-[36px] py-[14px] bg-[#F84646] rounded-[5px] absolute right-[6px] top-[6px]max-sm:px-[18px] max-sm:py-[14px]">Kayıt
+                    Ol</button>
+            </div>
+        </div>
+    </section>
+    <!-- FEAUTURES -->
+    <section>
+        <div class="max-w-[1185px] mx-auto px-[16px] w-full flex flex-col items-center gap-[30px] py-[120px]">
+            <h2 class="font-manrope font-bold text-[36px] leading-[50px] text-center">Kalite ve Süreç Yönetimi</h2>
+            <p class="font-manrope font-[400] text-[24px] leading-[40px] text-center max-w-[994px]">Müşterilerimizin
+                yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe kazanmış uzman kadrolarımızla
+                Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.</p>
+            <div class="grid grid-cols-3 gap-[110px] mt-[90px] max-lg:grid-cols-2 max-sm:grid-cols-1">
+                <div class="flex flex-col items-center text-center gap-[10px]">
+                    <div class="relative">
+                        <img class="bg-transparent" src="../assets/feauture1.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-[10px]">
+                        <h4 class="font-manrope font-[800] text-[24px] leading-[32px]">Döküman Analizi</h4>
+                        <p class="font-manrope font-[400] text-[18px] leading-[28px] max-w-[298px]">Ante vulputate ut at
+                            accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center text-center gap-[10px]">
+                    <div class="relative">
+                        <img class="bg-transparent" src="../assets/feauture2.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-[10px]">
+                        <h4 class="font-manrope font-[800] text-[24px] leading-[32px]">Kabul ve Değerlendirme</h4>
+                        <p class="font-manrope font-[400] text-[18px] leading-[28px] max-w-[298px]">Ante vulputate ut at
+                            accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center text-center gap-[10px]">
+                    <div class="relative">
+                        <img class="bg-transparent" src="../assets/feauture3.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-[10px]">
+                        <h4 class="font-manrope font-[800] text-[24px] leading-[32px]">İş Kuralları Analizi</h4>
+                        <p class="font-manrope font-[400] text-[18px] leading-[28px] max-w-[298px]">Ante vulputate ut at
+                            accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center text-center gap-[10px]">
+                    <div class="relative">
+                        <img class="bg-transparent" src="../assets/feauture4.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-[10px]">
+                        <h4 class="font-manrope font-[800] text-[24px] leading-[32px]">Akış Diyagramları</h4>
+                        <p class="font-manrope font-[400] text-[18px] leading-[28px] max-w-[298px]">Ante vulputate ut at
+                            accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center text-center gap-[10px]">
+                    <div class="relative">
+                        <img class="bg-transparent" src="../assets/feauture5.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-[10px]">
+                        <h4 class="font-manrope font-[800] text-[24px] leading-[32px]">Paydaş Analizi</h4>
+                        <p class="font-manrope font-[400] text-[18px] leading-[28px] max-w-[298px]">Ante vulputate ut at
+                            accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center text-center gap-[10px]">
+                    <div class="relative">
+                        <img class="bg-transparent" src="../assets/feauture6.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-[10px]">
+                        <h4 class="font-manrope font-[800] text-[24px] leading-[32px]">Prototipleme</h4>
+                        <p class="font-manrope font-[400] text-[18px] leading-[28px] max-w-[298px]">Ante vulputate ut at
+                            accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT -->
+    <section class="bg-[#f94649]">
+        <div class="max-w-[1185px] mx-auto px-[16px] w-full flex flex-col items-center gap-[30px] py-[120px]">
+            <h2 class="font-manrope font-bold text-[48px] leading-[64px] text-center text-white">Test Yönetimiyle Neler
+                Sağlıyoruz?</h2>
+            <p class="font-manrope font-[400] text-[18px] leading-[32px] text-center max-w-[994px] text-white">IoT
+                Destekli Çözümler</p>
+            <div class="flex items-center gap-[40px] mt-[60px] max-[720px]:flex-col text-center">
+                <p class="font-manrope font-[700] text-[18px] leading-[31px] max-w-[146px] text-white">Yazılım
+                    Kalitesini
+                    Arttırıyoruz
+                </p>
+                <i class="fa-solid fa-angles-right text-white max-[720px]:rotate-90"></i>
+                <p class="font-manrope font-[700] text-[18px] leading-[31px] max-w-[199px] text-white">Olası Hataları
+                    Önceden
+                    Belirliyoruz
+                </p>
+                <i class="fa-solid fa-angles-right text-white max-[720px]:rotate-90"></i>
+                <p class="font-manrope font-[700] text-[18px] leading-[31px] max-w-[181px] text-white">Oluşabilecek
+                    Riskleri
+                    Önlüyoruz
+                </p>
+                <i class="fa-solid fa-angles-right text-white max-[720px]:rotate-90"></i>
+                <p class="font-manrope font-[700] text-[18px] leading-[31px] max-w-[182px] text-white">Zaman ve
+                    Maliyetten
+                    Tasarruf Sağlıyoruz
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <!-- TEAM -->
+    <section>
+        <div
+            class="max-w-[1185px] mx-auto px-[16px] w-full flex  items-center justify-between my-[120px] max-lg:flex-col-reverse">
+            <div class="flex flex-col gap-[40px] max-lg:items-center max-lg:text-center mt-[60px]">
+                <h2 class="font-manrope font-bold text-[64px] leading-[76px]">Kalite ve Süreç Yönetimi</h2>
+                <p class="font-manrope font-[400] text-[16px] leading-[32px] max-w-[523px] text-[#808080]">Deneyimli
+                    kadromuz; birçok farklı sektörden deneyimli, PMP® sertifikasına sahip, uzman proje yöneticilerinden
+                    oluşmaktadır. Projelerinizin yönetimine destek olmak, zayıf olduğunu düşündüğünüz alanları
+                    güçlendirmek, uluslararası geçerliliği olan PMI® metodolojisini şirketinizde uygulamak ve
+                    geliştirmek için yanınızdayız. </p>
+                <button
+                    class="font-manrope font-bold text-[14px] leading-[20px] text-white  bg-[#F84646] rounded-[5px] mt-[40px] w-[160px] h-[48px] max-lg:mt-0 max-lg:w-full">Keşfet</button>
+            </div>
+            <img src="../assets/team.jpg" alt="">
+        </div>
+    </section>
+    <!-- GUARANTEE -->
+    <section>
+        <div class="max-w-[1185px] mx-auto px-[16px] w-full ">
+            <div class="flex  items-center justify-between my-[60px] gap-[145px] max-lg:flex-col">
+                <img class="max-lg:hidden" src="../assets/about1.jpg" alt="">
+                <img class="hidden max-lg:block" src="../assets/about2.jpg" alt="">
+                <div class="flex flex-col gap-[40px] max-lg:items-center max-lg:text-center">
+                    <h2 class="font-manrope font-bold text-[64px] leading-[76px]">Kalite ve Süreç Yönetimi</h2>
+                    <p class="font-manrope font-[400] text-[16px] leading-[32px] max-w-[523px] text-[#808080]">Deneyimli
+                        kadromuz; birçok farklı sektörden deneyimli, PMP® sertifikasına sahip, uzman proje
+                        yöneticilerinden oluşmaktadır. Projelerinizin yönetimine destek olmak, zayıf olduğunu
+                        düşündüğünüz alanları güçlendirmek, uluslararası geçerliliği olan PMI® metodolojisini
+                        şirketinizde uygulamak ve geliştirmek için yanınızdayız. </p>
+                    <button
+                        class="font-manrope font-bold text-[14px] leading-[20px] text-white  bg-[#F84646] rounded-[5px] mt-[40px] w-[160px] h-[48px] max-lg:mt-0 max-lg:w-full">Keşfet</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- REFERALS -->
+    <section class="bg-[#F4F5F7]">
+        <div class="max-w-[1185px] mx-auto px-[16px] w-full flex flex-col items-center justify-center">
+            <h2
+                class="font-manrope font-[800] text-[48px] leading-[64px] text-center pt-[45px] max-md:text-[36px] max-md:leading-[41px]">
+                Referanslarımız</h2>
+            <p class="font-manrope font-[500] text-[18px] leading-[32px] text-center">Bize güvenen ve beraber
+                çalıştığımız iş ortaklarımız</p>
+            <div class="flex items-center gap-[24px] mt-[50px] pb-[75px] max-md:flex-col">
+                <img class="w-[170px] h-[96] bg-white rounded-[16px] flex text-center items-center py-[12px] px-[12px]"
+                    src="../assets/logo1.png" alt="">
+                <div class="flex flex-col gap-[24px]">
+                    <img class="w-[170px] h-[96] bg-white rounded-[16px] flex text-center items-center  py-[12px]"
+                        px-[12px] src="../assets/logo2.png" alt="">
+                    <img class="w-[170px] h-[96] bg-white rounded-[16px] flex text-center items-center py-[20px] px-[12px]"
+                        src="../assets/logo3.png" alt="">
+                </div>
+                <div class="flex flex-col gap-[24px]">
+                    <img class="w-[170px] h-[96] bg-white rounded-[16px] flex text-center items-center py-[12px] px-[12px]"
+                        src="../assets/logo4.png" alt="">
+                    <img class="w-[170px] h-[96] bg-white rounded-[16px] flex text-center items-center py-[12px] px-[12px]"
+                        src="../assets/logo5.png" alt="">
+                    <img class="w-[170px] h-[96] bg-white rounded-[16px] flex text-center items-center py-[12px] px-[12px]"
+                        src="../assets/logo6.png" alt="">
+                </div>
+                <div class="flex flex-col gap-[24px]">
+                    <img class="w-[170px] h-[96] bg-white rounded-[16px] flex text-center items-center py-[12px] px-[12px] max-md:hidden"
+                        src="../assets/logo7.png" alt="">
+                    <img class="w-[170px] h-[96] bg-white rounded-[16px] flex text-center items-center py-[12px] px-[12px] max-md:hidden"
+                        src="../assets/logo8.png" alt="">
+                </div>
+                <img class="w-[170px] h-[96] bg-white rounded-[16px] flex text-center items-center py-[18px] px-[12px] max-md:hidden"
+                    src="../assets/logo9.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT -->
+    <section>
+        <div class="max-w-[1185px] mx-auto px-[16px] w-full flex flex-col items-center justify-center">
+            <div class="mt-[160px] flex flex-col items-center gap-[10px] justify-center">
+                <img src="../assets/Users.png" alt="">
+                <div class="flex flex-col items-center text-center gap-[20px] mb-[160px]">
+                    <h1 class="font-manrope font-[800] text-[48px] leading-[32px] text-center max-md:text-[36px] ">Bize
+                        Ulaşın</h1>
+                    <p
+                        class="font-manrope font-[500] text-[18px] leading-[32px] text-center max-md:text-[14px] max-md:leading-[25px]">
+                        Çözüm, hizmet ve ürünlerimiz hakkında detaylı bilgi için bizimle irtibata geçin.</p>
+                    <button
+                        class="py-[25px] px-[40px] font-manrope font-[600] text-[24px] leading-[20px] text-white bg-[#F84646] rounded-[8px] mt-[10px]">Bize
+                        Ulaşın</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-[#F8464A]">
+        <div class="max-w-[1185px] mx-auto px-[16px] w-full">
+            <div class="flex pt-[80px] pb-[50px] gap-[100px] max-md:flex-col">
+                <ul class="flex flex-col gap-[24px]">
+                    <li class="font-bold text-[16px] leading-[24px] text-white">Çözüm ve Hizmetler</li>
+                    <li><a class="font-manrope font-[400] text-[16px] leading-[32px] text-[#E6E6E6]" href="#">Yazılım
+                            Geliştirme</a></li>
+                    <li><a class="font-manrope font-[400] text-[16px] leading-[32px] text-[#E6E6E6]"
+                            href="#">Outsourcing</a></li>
+                    <li><a class="font-manrope font-[400] text-[16px] leading-[32px] text-[#E6E6E6]" href="#">Kalite ve
+                            Süreç Yönetimi</a></li>
+                    <li><a class="font-manrope font-[400] text-[16px] leading-[32px] text-[#E6E6E6]"
+                            href="#">Danışmanlık</a></li>
+                    <li><a class="font-manrope font-[400] text-[16px] leading-[32px] text-[#E6E6E6]" href="#">IoT
+                            Destekli Çözümler</a></li>
+                </ul>
+                <ul class="flex flex-col gap-[24px]">
+                    <li class="font-bold text-[16px] leading-[24px] text-white">ÇÜrünler</li>
+                    <li><a class="font-manrope font-[400] text-[16px] leading-[32px] text-[#E6E6E6]" href="#">Eğitim
+                            Yönetim Sistemi</a></li>
+                    <li><a class="font-manrope font-[400] text-[16px] leading-[32px] text-[#E6E6E6]" href="#">İnsan
+                            Sermayesi Yönetim Sistemi</a></li>
+                    <li><a class="font-manrope font-[400] text-[16px] leading-[32px] text-[#E6E6E6]" href="#">Müşteri
+                            İlişkileri Yönetim Sistemi</a></li>
+                    <li><a class="font-manrope font-[400] text-[16px] leading-[32px] text-[#E6E6E6]" href="#">İçerik
+                            Yönetim Sistemi</a></li>
+                </ul>
+                <ul class="flex flex-col gap-[24px]">
+                    <li class="font-bold text-[16px] leading-[24px] text-white">Kurumsal</li>
+                    <li><a class="font-manrope font-[400] text-[16px] leading-[32px] text-[#E6E6E6]"
+                            href="#">Hakkımızda</a></li>
+                    <li><a class="font-manrope font-[400] text-[16px] leading-[32px] text-[#E6E6E6]" href="#">Belge ve
+                            Yetkinlikler</a></li>
+                    <li><a class="font-manrope font-[400] text-[16px] leading-[32px] text-[#E6E6E6]" href="#">İş
+                            Ortakları</a></li>
+                </ul>
+                <ul class="flex flex-col gap-[24px]">
+                    <li class="font-bold text-[16px] leading-[24px] text-white">İletişim</li>
+                    <li><a class="font-manrope font-[400] text-[16px] leading-[32px] text-[#E6E6E6]" href="#">Bilgi
+                            İstek Formu</a></li>
+                    <li><a class="font-manrope font-[400] text-[16px] leading-[32px] text-[#E6E6E6]" href="#">Uzman
+                            Talep Formu</a></li>
+                </ul>
+            </div>
+            <div class="flex justify-between items-center pb-[70px] max-[900px]:flex-col-reverse gap-[40px]">
+                <p class="font-manrope font-[400] text-[16px] leading-[32px] text-white">© Copyright 2010-2021 - Can Çevik</p>
+                <div class="flex gap-[16px]">
+                    <i class="fa-brands fa-medium text-[24px] text-white"></i>
+                    <i class="fa-brands fa-linkedin text-[24px] text-white"></i>
+                    <i class="fa-brands fa-twitter text-[24px] text-white"></i>
+                    <i class="fa-brands fa-instagram text-[24px] text-white"></i>
+                    <i class="fa-brands fa-facebook text-[24px] text-white"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
